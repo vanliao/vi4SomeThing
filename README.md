@@ -1,2 +1,33 @@
-# vi4SomeThing
 在 windows 上使用 vi 操作某些 app 提高效率
+
+# ViATc
+
+`ViATc` 可以在 `Total Commander` 中使用 `vi`， 来源于开源项目 ([linxinhong/ViATc](https://github.com/linxinhong/ViATc))，在它基础上做了个性化配置，主要有以下差异：
+-  `h/l` 按键控制光标在左右窗口跳转
+- 去掉 `WIN + e` 快捷键，恢复 Windows 默认行为（打开资源管理器）
+
+# ViAtBc
+
+以 `viatc` 作为模版创建的针对 `Beyond Compare` 应用程序的 `vi` 热键，功能比较简单，主要是光标导航
+- `h/l` 按键控制光标在左右窗口跳转
+- `j/k` 按键控制光标上下移动
+- `gg` 按键控制光标跳转到最上面
+- `G` 按键控制光标跳转到最下面
+- `i` 按键进入 `insert` 模式，该模式下就是正常的 `Beyond Compare` 操作
+- `Esc` 按键进入 `normal` 模式，在该模式下进行 `vi` 操作
+
+# 如何使用
+
+1. 下载 `AutoHotkey` ([AutoHotkey](https://www.autohotkey.com/))
+2. 点击 `ViATc\viatc-0.6.1.ahk` 即可使用 `vi` 操作 `total commander`
+3. 点击 `ViAtBC\ViAtBC.ahk` 即可使用 `vi` 操作 `total commander`
+
+运行 `ahk` 脚本后，任务栏里会有个绿色的 `H` 小图标
+
+## 配置 viatbc
+
+`ViAtBc` 下有个 `viabc.ini` 配置文件，里面的 `BCClass` 用于配置 `Beyond Compare` 窗口类名，通过一下方式可以获取到
+1. 打开 `AHK` 自带的 `Window Spy`（`AutoHotkey` 安装目录下的 `AU3_Spy.exe`）
+    - `Window Spy` 也可以通过右击任务栏的绿色 `H` 小图标启动
+2. 点击 BC 窗口，看顶部的 ahk_class 是什么值
+3. 把这个值写入到 `ini` 文件即可
