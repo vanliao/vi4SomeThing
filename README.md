@@ -18,7 +18,7 @@
 
 # 如何使用
 
-1. 下载 `AutoHotkey` ([AutoHotkey](https://www.autohotkey.com/))
+1. 下载 [AutoHotkey](https://www.autohotkey.com/)
 2. 点击 `ViATc\viatc-0.6.1.ahk` 即可使用 `vi` 操作 `total commander`
 3. 点击 `ViAtBC\ViAtBC.ahk` 即可使用 `vi` 操作 `total commander`
 
@@ -31,3 +31,7 @@
     - `Window Spy` 也可以通过右击任务栏的绿色 `H` 小图标启动
 2. 点击 BC 窗口，看顶部的 ahk_class 是什么值
 3. 把这个值写入到 `ini` 文件即可
+
+## 转换成 exe
+
+使用 `AHK` 自带的 `Ahk2Exe.exe` 可以将 `ank` 脚本转换成 `exe` 文件，比较方便创建快捷键方式放到系统启动项中
