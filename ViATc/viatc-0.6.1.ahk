@@ -275,10 +275,3 @@ EmptyMem()
 #include Actions\TCCOMMAND+.ahk
 #include Actions\QDir.ahk
 
-;===================================================
-; h/l 跳转到TC左/右窗口
-;===================================================
-#IfWinActive ahk_class TTOTAL_CMD
-$h::SendMessage, 0x433, 4001, 0, , ahk_class TTOTAL_CMD  ; cm_FocusLeft
-$l::SendMessage, 0x433, 4002, 0, , ahk_class TTOTAL_CMD  ; cm_FocusRight
-#IfWinActive
