@@ -4,6 +4,7 @@
 
 `ViATc` 可以在 `Total Commander` 中使用 `vi`， 来源于开源项目 ([linxinhong/ViATc](https://github.com/linxinhong/ViATc))，在它基础上做了个性化配置，主要有以下差异：
 -  `h/l` 按键控制光标在左右窗口跳转
+- `Ctrl+u / Ctrl+d` 按键控制 上移/下移 16个文件
 - 去掉 `WIN + e` 快捷键，恢复 Windows 默认行为（打开资源管理器）
 
 # ViAtBc
@@ -11,9 +12,10 @@
 以 `viatc` 作为模版创建的针对 `Beyond Compare` 应用程序的 `vi` 热键，功能比较简单，主要是光标导航
 - `h/l` 按键控制光标在左右窗口跳转
 - `j/k` 按键控制光标上下移动
+- `Ctrl+u / Ctrl+d` 按键控制 上移/下移 15个文件
 - `gg` 按键控制光标跳转到最上面
 - `G` 按键控制光标跳转到最下面
-- `i` 按键进入 `insert` 模式，该模式下就是正常的 `Beyond Compare` 操作
+- `i` 按键进入 `insert` 模式，该模式下就是正常的 `Beyond Compare` 操作(*几乎不需要进入该模式*)
 - `Esc` 按键进入 `normal` 模式，在该模式下进行 `vi` 操作
 
 # 如何使用

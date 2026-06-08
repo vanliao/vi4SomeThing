@@ -319,6 +319,12 @@ $g::
 
 ; G (Shift+g) - go to bottom (End)
 $+g:: Send, {End}
+
+; Ctrl+u - move up 15 lines
+$^u:: Send, {Up 15}
+
+; Ctrl+d - move down 15 lines
+$^d:: Send, {Down 15}
 #If
 
 ;===================================================

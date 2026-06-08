@@ -25,6 +25,8 @@
 	CustomActions("<ToggleTC>","打开/激活TC")
 	CustomActions("<azHistory>","a-z历史导航")
 	CustomActions("<DownSelect>","向下选择")
+	CustomActions("<Down15>","Ctrl+d向下移动15个文件")
+	CustomActions("<Up15>","Ctrl+u向上移动15个文件")
 	CustomActions("<UpSelect>","向上选择")
 	CustomActions("<Mark>","标记功能")
 	CustomActions("<ForceDelete>","强制删除")
@@ -55,6 +57,8 @@
 	RegisterHotkey("K","<upSelect>","TTOTAL_CMD")
 	RegisterHotkey("j","<down>","TTOTAL_CMD")
 	RegisterHotkey("J","<downSelect>","TTOTAL_CMD")
+	RegisterHotkey("<ctrl>d","<Down15>","TTOTAL_CMD")
+	RegisterHotkey("<ctrl>u","<Up15>","TTOTAL_CMD")
 	RegisterHotkey("h","<left>","TTOTAL_CMD")
 	RegisterHotkey("H","<cm_GotoPreviousDir>","TTOTAL_CMD")
 	RegisterHotkey("l","<right>","TTOTAL_CMD")
@@ -270,6 +274,14 @@ azSelect()
 ; <DownSelect> {{{1
 <DownSelect>:
 	Send +{Down}
+return
+; <Down15> {{{1
+<Down15>:
+	Send,{Down 15}
+return
+; <Up15> {{{1
+<Up15>:
+	Send,{Up 15}
 return
 ; <upSelect> {{{1
 <upSelect>:
