@@ -2,10 +2,12 @@
 
 # ViATc
 
-`ViATc` 可以在 `Total Commander` 中使用 `vi`， 来源于开源项目 ([linxinhong/ViATc](https://github.com/linxinhong/ViATc))，在它基础上做了个性化配置，主要有以下差异：
+`ViATc` 可以在 `Total Commander` 中使用 `vi`， 来源于开源项目 ([linxinhong/ViATc](https://github.com/linxinhong/ViATc))，在它基础上做了个性化配置，功能比较多不列举，主要有以下差异：
 -  `h/l` 按键控制光标在左右窗口跳转
 - `Ctrl+u / Ctrl+d` 按键控制 上移/下移 16个文件
-- 去掉 `WIN + e` 快捷键，恢复 Windows 默认行为（打开资源管理器）
+- 去掉 `WIN + e` 快捷键，恢复 `Windows` 默认行为（打开资源管理器）
+- `gm` 按键控制切换到下一个标签（右侧标签）
+- `gn` 按键控制切换到上一个标签（左侧标签）
 
 # ViAtBc
 
