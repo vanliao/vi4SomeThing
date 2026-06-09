@@ -311,6 +311,11 @@ $h:: Send, {Left}
 $l:: Send, {Right}
 $i:: Vim_InsertMode()
 
+; Shift+J - select down (like Shift+Down)
+$+j:: Send, +{Down}
+; Shift+K - select up (like Shift+Up)
+$+k:: Send, +{Up}
+
 ; gg - double press g to go to top (Ctrl+Home)
 $g::
     if (A_PriorHotkey = "$g" and A_TimeSincePriorHotkey < 500)
@@ -325,6 +330,9 @@ $^u:: Send, {Up 15}
 
 ; Ctrl+d - move down 15 lines
 $^d:: Send, {Down 15}
+
+; x - delete file (BC shortcut: Shift+Del)
+$x:: Send, +{Delete}
 #If
 
 ;===================================================
